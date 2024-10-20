@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vegetable and Fruit Shop</title>
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center"
+          href="#"
+          aria-label="Verdant Home"
+        >
+          <img src="./assets/images/logo.png" alt="veGETAbles" class="me-2" />
+          veGETAbles
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <!-- Dropdown Shop -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="shopDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                <li><a class="dropdown-item" href="#">All Products</a></li>
+                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                <li><a class="dropdown-item" href="#">Organic</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+            <!-- Cart Icon -->
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#" aria-label="Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  3
+                  <!-- Example number of items in cart -->
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--  hero wrap  -->
+    <div
+      class="hero-wrap hero-bread"
+      style="background-image: url('assets/images/bg_2.jpg')"
+    >
+      <div class="container">
+        <div
+          class="row no-gutters slider-text align-items-center justify-content-center"
+        >
+          <div class="col-md-9 ftco-animate text-center">
+            <p class="breadcrumbs">
+              <span class="mr-2"><a href="index.html">Home</a></span>
+              <span>Products</span>
+            </p>
+            <h1 class="mb-0 bread">Products</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ftco section -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 mb-5 text-center">
+            <ul class="product-category">
+              <li><a href="#" class="active">All</a></li>
+              <li><a href="#">Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-1.jpg"
+                  alt="Colorlib Template"
+                />
+                <span class="status">30%</span>
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Paprica</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price">
+                      <span class="mr-2 price-dc">Rp120.000</span
+                      ><span class="price-sale">Rp80.000</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-2.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Strawberry</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp18.500</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-3.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Kacang Hijau</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp26.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-4.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Kol Ungu</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp37.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-5.jpg"
+                  alt="Colorlib Template"
+                />
+                <span class="status">30%</span>
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Tomat</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price">
+                      <span class="mr-2 price-dc">Rp14.000</span
+                      ><span class="price-sale">Rp7.000</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-6.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Brokoli</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp30.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-7.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Wortel</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp15.306</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-8.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Jus Buah</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp10.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-9.jpg"
+                  alt="Colorlib Template"
+                />
+                <span class="status">30%</span>
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Bawang Merah</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price">
+                      <span class="mr-2 price-dc">Rp20.000</span
+                      ><span class="price-sale">Rp16.000</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-10.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Apel Fuji</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp55.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-11.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Bawang Putih</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp36.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="product">
+              <a href="#" class="img-prod"
+                ><img
+                  class="img-fluid"
+                  src="assets/images/product-12.jpg"
+                  alt="Colorlib Template"
+                />
+                <div class="overlay"></div>
+              </a>
+              <div class="text py-3 pb-4 px-3 text-center">
+                <h3><a href="#">Cabai Merah</a></h3>
+                <div class="d-flex">
+                  <div class="pricing">
+                    <p class="price"><span>Rp25.000</span></p>
+                  </div>
+                </div>
+                <!-- Button Beli -->
+                <!-- Tombol Keranjang dan Beli -->
+                <div class="d-flex justify-content-center mt-2">
+                  <a href="#" class="btn btn-outline-primary me-2 add-to-cart"
+                    >Tambah ke Keranjang</a
+                  >
+                  <a href="checkout.html" class="btn btn-success">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col text-center">
+            <div class="block-27">
+              <ul>
+                <li><a href="#">&lt;</a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">veGETables</h2>
+              <p>
+                Dapatkan produk berkualitas langsung dari petani ke pintu rumah
+                Anda!
+              </p>
+
+              <!-- Social Media Icons -->
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    <!-- Facebook Icon -->
+                  </a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <!-- Instagram Icon -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Shop</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Journal</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+                <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+                  <li>
+                    <a href="#" class="py-2 d-block">Shipping Information</a>
+                  </li>
+                  <li>
+                    <a href="#" class="py-2 d-block">Returns &amp; Exchange</a>
+                  </li>
+                  <li>
+                    <a href="#" class="py-2 d-block">Terms &amp; Conditions</a>
+                  </li>
+                  <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block">FAQs</a></li>
+                  <li><a href="#" class="py-2 d-block">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span>
+                    <span class="text"
+                      >203 Fake St. Mountain View, San Francisco, California,
+                      USA</span
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon icon-phone"></span
+                      ><span class="text">+2 392 3929 210</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text">info@yourdomain.com</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | Made by FrontEndFurry
+              <i class="icon-heart color-danger" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/js.js"></script>
+  </body>
+</html>

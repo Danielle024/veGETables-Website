@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Transparent Navbar */
+.navbar {
+  background-color: transparent; /* Transparansi penuh */
+  transition: background-color 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.85); /* Warna solid setelah scroll */
+}
+
+.navbar.scrolled .nav-link {
+  color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #f6f8fd;
+  height: 100vh;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  color: #69d84f;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.hero-section .btn {
+  margin-top: 2rem;
+}
+
+img {
+  border-radius: 20px;
+}
+
+/* Section Unique */
+.unique-section {
+  background-color: #f8f9fa; /* Background putih lembut */
+}
+
+.unique-section img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.unique-section h2 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.unique-section p {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  color: #555;
+}
+
+.unique-section .btn {
+  margin-top: 2rem;
+}
+
+/* Produce Highlights */
+.produce-highlights {
+  background-color: #ffffff; /* Background putih */
+}
+
+.produce-highlights h6 {
+  color: #f77f00;
+}
+
+.produce-highlights img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.produce-highlights .btn {
+  margin-top: 2rem;
+}
+
+/* Our Mission Section */
+.our-mission {
+  background-color: #ffe8d6;
+  border-radius: 20px;
+  padding: 60px 0;
+}
+
+.our-mission h2 {
+  margin-bottom: 2rem;
+  color: #6d6875;
+}
+
+.our-mission h5 {
+  color: #f77f00;
+  font-weight: bold;
+}
+
+.our-mission p {
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+/* Explore Products Section */
+.explore-products {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  border-radius: 10px;
+}
+
+.explore-products h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.explore-products p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.product-item {
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.product-item h5 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Section: Connect with Us */
+.connect-with-us {
+  background-color: #f0f4f8;
+  padding: 60px 0;
+  border-radius: 10px;
+}
+
+.connect-with-us h2 {
+  color: #333;
+}
+
+.connect-with-us p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.social-card {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-card .card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-card .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.social-card .card-title {
+  font-weight: bold;
+}
+
+.social-card .card-text {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #b2e0f1;
+  color: #005f73;
+}
+
+.footer h5 {
+  margin-bottom: 1rem;
+  color: #023047;
+}
+
+.footer a {
+  color: #005f73;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #023047;
+}
+
+.footer img {
+  width: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
